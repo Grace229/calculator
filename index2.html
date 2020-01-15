@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>business card</title>
+</head>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+  
+
+  <script>
+     function squareNumber(name) {
+    return Math.pow(name, 2);
+
+  }
+  console.log(squareNumber(10));
+
+  function halfNumber(name) {
+    return (name/2);
+  }
+  console.log(halfNumber(20));
+
+  function percentOf(n, a) {
+    return ((n/a)*100);
+
+  }
+  console.log(percentOf(2, 4));
+
+  function circleArea(radius){
+    return (Math.PI * (radius * radius)).toFixed(2); 
+  }
+  console.log(circleArea(4));
+ function caculator(number){
+ let half = halfNumber(number);
+ let square = squareNumber(half);
+ let area = circleArea(square);
+ let result = percentOf(area, square);
+ return (result);
+ }
+
+  console.log(caculator(2))
+
+  </script>
+<script src="jquery.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
